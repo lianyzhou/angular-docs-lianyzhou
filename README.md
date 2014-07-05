@@ -1,6 +1,4 @@
 angular-docs-lianyzhou
 ======================
 
-run gulp from angularjs.org , fight against GF.
-
-http://angulardoc.ilianyi.cn
+将根目录下的所有文件，放入到一个Web容器中，即可。
