@@ -1,0 +1,69 @@
+
+
+<div>
+  <a ng-click="openPlunkr('examples/example-example50')" class="btn pull-right">
+    <i class="glyphicon glyphicon-edit">&nbsp;</i>
+    Edit in Plunker</a>
+  <div class="runnable-example"
+      path="examples/example-example50">
+
+   
+    <div class="runnable-example-file" 
+      name="index.html"
+      language="html"
+      type="html">
+      <pre><code>&lt;div ng-controller=&quot;MainCtrl&quot;&gt;&#10;  &lt;p&gt;$document title: &lt;b ng-bind=&quot;title&quot;&gt;&lt;/b&gt;&lt;/p&gt;&#10;  &lt;p&gt;window.document title: &lt;b ng-bind=&quot;windowTitle&quot;&gt;&lt;/b&gt;&lt;/p&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="script.js"
+      language="js"
+      type="js">
+      <pre><code>function MainCtrl($scope, $document) {&#10;  $scope.title = $document[0].title;&#10;  $scope.windowTitle = angular.element(window.document)[0].title;&#10;}</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example50/index.html" name="example-example50"></iframe>
+  </div>
+</div>
+
+9; expression changes&#10;            // assign it into the current DOM&#10;            element.html(value);&#10;&#10;            // compile the new DOM and link it to the current&#10;            // scope.&#10;            // NOTE: we only compile .childNodes so that&#10;            // we don&#39;t get into infinite loop compiling ourselves&#10;            $compile(element.contents())(scope);&#10;          }&#10;        );&#10;      };&#10;    })&#10;  });&#10;&#10;  function Ctrl($scope) {&#10;    $scope.name = &#39;Angular&#39;;&#10;    $scope.html = &#39;Hello {{name}}&#39;;&#10;  }&#10;&lt;/script&gt;&#10;&lt;div ng-controller=&quot;Ctrl&quot;&gt;&#10;  &lt;input ng-model=&quot;name&quot;&gt; &lt;br&gt;&#10;  &lt;textarea ng-model=&quot;html&quot;&gt;&lt;/textarea&gt; &lt;br&gt;&#10;  &lt;div compile=&quot;html&quot;&gt;&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+    <div class="runnable-example-file" 
+      name="protractor.js"
+      type="protractor"
+      language="js">
+      <pre><code>it(&#39;should auto compile&#39;, function() {&#10;  var textarea = $(&#39;textarea&#39;);&#10;  var output = $(&#39;div[compile]&#39;);&#10;  // The initial state reads &#39;Hello Angular&#39;.&#10;  expect(output.getText()).toBe(&#39;Hello Angular&#39;);&#10;  textarea.clear();&#10;  textarea.sendKeys(&#39;{{name}}!&#39;);&#10;  expect(output.getText()).toBe(&#39;Angular!&#39;);&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example5/index.html" name="example-example5"></iframe>
+  </div>
+</div>
+
+">
+      <pre><code>describe(&#39;SCE doc demo&#39;, function() {&#10;it(&#39;should sanitize untrusted values&#39;, function() {&#10;  expect(element(by.css(&#39;.htmlComment&#39;)).getInnerHtml())&#10;      .toBe(&#39;&lt;span&gt;Is &lt;i&gt;anyone&lt;/i&gt; reading this?&lt;/span&gt;&#39;);&#10;});&#10;&#10;it(&#39;should NOT sanitize explicitly trusted values&#39;, function() {&#10;  expect(element(by.id(&#39;explicitlyTrustedHtml&#39;)).getInnerHtml()).toBe(&#10;      &#39;&lt;span onmouseover=&quot;this.textContent=&quot;Explicitly trusted HTML bypasses &#39; +&#10;      &#39;sanitization.&quot;&quot;&gt;Hover over this text.&lt;/span&gt;&#39;);&#10;});&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example64/index.html" name="example-example64"></iframe>
+  </div>
+</div>
+
+;/div&gt;&#10;&lt;/div&gt;</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example62/index.html" name="example-example62"></iframe>
+  </div>
+</div>
+
+tText()).toMatch(&#39;0&#39;);&#10;  expect(data.getText()).toMatch(&#39;Request failed&#39;);&#10;});</code></pre>
+    </div>
+  
+
+    <iframe class="runnable-example-frame" src="examples/example-example59/index.html" name="example-example59"></iframe>
+  </div>
+</div>
+
